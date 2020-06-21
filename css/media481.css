@@ -1,0 +1,11 @@
+@media screen and (max-width:481px){
+   .sec1 nav .logo, .sec1 nav ul{
+     display: none;
+   }
+   .sec1 nav .hambur-menu{
+    display: block;
+   }
+   .sec1 nav .hambur-menu span{
+
+   }
+}
