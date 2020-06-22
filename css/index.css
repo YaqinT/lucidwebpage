@@ -29,7 +29,10 @@ li{
   flex-direction: column;
   align-items: center;
 }
-.sec1 nav .hambur-menu{
+.sec1 nav button{
+  display: none;
+}
+.sec1 .mobile-menu, .sec1 .menu{
   display: none;
 }
 .sec1 nav{
@@ -39,6 +42,9 @@ li{
 }
 .sec1 nav ul{
   display: flex;
+}
+.sec1 nav .webUl{
+  font-size: 1.4vw;
 }
 .sec1 nav ul li{
   margin-right: 1vw;
@@ -138,6 +144,9 @@ li{
   text-align: center;
   margin-bottom: 1.5vw;
 }
+.sec2 .feature .img img{
+  height: 2.5vw;
+}
 .sec2 .features{
   display: flex;
   width: 80vw;
@@ -197,18 +206,22 @@ li{
 .sec3 .text .features .icons{
   display: flex;
   flex-direction: column;
+  height: 11vw;
+  justify-content: space-between;
 }
 .sec3 .text .features .words{
   display: flex;
   flex-direction: column;
   font-size: 1.1vw;
+  height: 11vw;
+  justify-content: space-between;
 }
-.sec3 .text .features .icons img{
+/* .sec3 .text .features .icons img{
   margin-bottom: 1vw;
 }
 .sec3 .text .features .words span{
   margin-bottom: 1vw;
-}
+} */
 
 
 /* section4 */
@@ -276,7 +289,9 @@ li{
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-
+}
+.sec5 .quotes .quote img{
+  width: 5vw;
 }
 .sec5 .quotes .quote .author{
   display: flex;
@@ -361,7 +376,7 @@ li{
    }
    .sec7 .prices .price{
      width: 18vw;
-     height: 70vh;
+     height: auto;
      border:1px solid #eaeaea;
      text-align: center;
      display: flex;
@@ -410,6 +425,7 @@ li{
   color: #008ed6;
   font-size: 0.9vw;
   font-weight: bold;
+  margin-bottom: 2vw;
 }
 .sec7 .business .priceNum{
   background: #008ed6;
@@ -445,7 +461,7 @@ li{
 }
 .sec8 .contacts{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 70vw;
   justify-content: space-between;
   margin-bottom: 20vw;
@@ -458,6 +474,9 @@ li{
 .sec8 .contacts .contact .img{
   margin-bottom: 2vw;
   width: 1.5vw;
+  height: 1.5vw;
+}
+.sec8 .contacts .contact .img img{
   height: 1.5vw;
 }
 .sec8 .contacts .contact p{

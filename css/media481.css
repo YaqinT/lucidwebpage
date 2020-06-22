@@ -1,11 +1,408 @@
 @media screen and (max-width:481px){
-   .sec1 nav .logo, .sec1 nav ul{
+  .marginBottom1{
+    margin-bottom: 1rem;
+  }
+  .marginBottom2{
+    margin-bottom: 2rem;
+  }
+   .sec1 nav .logo, .sec1 nav .webUl{
      display: none;
    }
-   .sec1 nav .hambur-menu{
+   .sec1 nav button{
     display: block;
+    position: absolute;
+    z-index: 1999;
    }
-   .sec1 nav .hambur-menu span{
+   .sec1 nav .hidden-menu{
+       position: absolute;
+        width: 120px;
+        height: 200px;
+        background-color: rgba(255,255,255,0.8);
+        /* margin-left:80px; */
+        margin-left: 80px;
+        color: black;
+        transform: translate(-240px,0px);
+        transition: 0.8s;
+   }
 
+   .sec1 .mobile-menu, .sec1 .menu{
+     display: block;
    }
+   .sec1 nav .display-menu{
+        width: 120px;
+        height: 200px;
+        background-color: rgba(255,255,255,0.8);
+        /* margin-left:80px; */
+        margin-left: -160px;
+        color: black;
+        transform: translate(240px,0px);
+        transition: 0.8s;
+   }
+   .sec1 nav .hidden-menu ul{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     height: 180px;
+     padding-left: 10px;
+   }
+   .sec1 nav .hidden-menu ul li{
+     cursor: pointer;
+   }
+   .sec1 nav .hidden-menu ul .active{
+     width:100px;
+   }
+
+   .sec1 .content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   .sec1 .content .text {
+     width: 80vw;
+   }
+   .sec1 .content .text p{
+     font-size: 1.9rem;
+     margin-bottom: 1rem;
+   }
+   .sec1 .content .text .title{
+     font-size: 1.5rem;
+     margin-bottom: 2rem;
+   }
+   .sec1 .content .text .para{
+     font-size: 0.7rem;
+   }
+   .sec1 .content .text .buttons{
+     margin-top: 3rem;
+     width: auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+   .sec1 .content .text button{
+     width: 150px;
+     height: 40px;
+     font-size: 0.8rem;
+     margin-bottom: 1rem;
+   }
+   .sec1 .content .phones img{
+     margin-top: 1rem;
+     height: 220px;
+   }
+
+   /* section2 */
+   .sec2{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+   }
+   .sec2 p{
+     font-size: 1.5rem;
+   }
+   .sec2 .main{
+     font-size: 1rem;
+   }
+   .sec2 span{
+     font-size: 2rem;
+     margin-bottom: 1rem;
+   }
+   .sec2 .features{
+     display: flex;
+     flex-direction:column;
+     align-items: center;
+     margin-top: auto;
+     width: auto;
+   }
+   .sec2 .features .feature{
+     margin-bottom: 2rem;
+   }
+   .sec2 .feature .img{
+     width: 100px;
+     height: 100px;
+     margin-bottom: 1.5rem;
+   }
+   .sec2 .feature .img img{
+     height: 35px;
+   }
+   .sec2 .feature .title{
+     font-size: 1rem;
+     margin-bottom: 1rem;
+   }
+   .sec2 .feature .intro{
+     font-size: 0.8rem;
+     width: 90%;
+   }
+
+   /* section3 */
+   .sec3{
+     padding: 2rem 0 0 0;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+   }
+   .sec3 p{
+     font-size: 1.5rem;
+   }
+   .sec3 .img img{
+     height: 220px;
+   }
+   .sec3 .text{
+     width: auto;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+   }
+   .sec3 .text .title{
+     font-size: 1rem;
+   }
+   .sec3 .devide {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+   }
+   .sec3 .text .para{
+     font-size: 0.8rem;
+     margin-bottom: 2rem;
+     width: 90%;
+   }
+   .marginRight1{
+     margin-right: 1rem;
+   }
+   .sec3 .text .features{
+     margin-bottom: 2rem;
+   }
+   .sec3 .text .features .icons img{
+     margin-bottom: 1rem;
+   }
+   .sec3 .text .features .icons{
+     height: 117px;
+   }
+   .sec3 .text .features .words{
+     font-size: 0.8rem;
+     justify-content: space-between;
+     height: 117px;
+   }
+
+   /* section4 */
+   .sec4{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+   }
+   .sec4 .text{
+     width: auto;
+     margin-top: 2rem;
+   }
+   .sec4 p{
+     font-size: 1.5rem;
+   }
+   .sec4 .text .title{
+     font-size: 1rem;
+   }
+   .sec4 .text .devide{
+     font-size: 2rem;
+     margin-bottom: 1rem;
+   }
+   .sec4 .text .para{
+     font-size: 0.7rem;
+     width: 90%;
+     margin-bottom: 2rem;
+   }
+   .sec4 .img img{
+     width: 240px;
+   }
+   .sec5{
+     padding: 2rem 0 0 0;
+   }
+   .sec5 p{
+     font-size: 1.5rem;
+   }
+   .sec5 .title{
+     font-size: 1rem;
+   }
+   .sec5 .devide{
+     font-size: 2rem;
+     margin-bottom: 1rem;
+   }
+   .sec5 .quotes{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   .sec5 .quotes .quote{
+     width: auto;
+     font-size: 0.8rem;
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 2rem;
+     align-items: center;
+   }
+   .sec5 .quotes .quote img{
+     width: 70px;
+   }
+   .sec5 .quotes .quote .author{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+   }
+   .sec5 .quotes .quote .author .name{
+     align-items: center;
+   }
+
+   /* section6 */
+   .sec6{
+     padding: 1.5rem 2rem 1.5rem 2rem;
+     flex-direction: column;
+     align-items: center;
+   }
+   .sec6 .text{
+     font-size: 0.8rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 1rem;
+   }
+   .sec6 .buttons{
+     display: flex;
+     flex-direction: column;
+     width: auto;
+   }
+   .sec6 .buttons button{
+     width: 150px;
+     height: 40px;
+     font-size: 0.8rem;
+   }
+   .sec6 .buttons .features{
+     margin-bottom: 1rem;
+   }
+
+   /* section7 */
+   .sec7{
+         padding: 2rem 10vw 5vw 10vw;
+         text-align: center;
+   }
+   .sec7 p{
+     font-size: 1.5rem;
+   }
+   .sec7 .title{
+     font-size: 1rem;
+   }
+   .sec7 .devide{
+     font-size: 2rem;
+     margin-bottom: 2rem;
+   }
+   .sec7 .prices{
+     width: auto;
+     flex-direction: column;
+   }
+   .sec7 .prices .price{
+     width: 220px;
+     height: auto;
+     margin-bottom: 1rem;
+   }
+   .sec7 .price h3{
+     padding: 1rem 0 1rem 0;
+   }
+   .sec7 .price .priceNum{
+     padding: 2rem 0 2rem 0;
+   }
+   .sec7 .price .num{
+     font-size: 2rem;
+   }
+   .sec7 .price .smaller{
+     font-size: 1rem;
+   }
+   .sec7 .price .price-para{
+         padding: 3rem 0 3rem 0;
+         font-size: 0.8rem;
+   }
+   .sec7 .price button{
+     width: 150px;
+     height: 40px;
+     font-size: 0.8rem;
+     margin-bottom: 1rem;
+   }
+
+
+/* section8 */
+    .sec8{
+      padding-top: 0;
+    }
+    .sec8 p{
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+    .sec8 .title{
+      font-size: 1rem;
+    }
+    .sec8 .devide{
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .sec8 .contacts{
+      flex-direction: column;
+      width: auto;
+      margin-bottom: 5rem;
+      align-items: center;
+    }
+    .sec8 .contact{
+      margin-bottom: 2rem;
+    }
+    .sec8 .contacts .contact .img{
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .sec8 .contacts .contact .img img{
+      height: 1.4rem;
+    }
+    .sec8 .contacts .contact p{
+      margin: 0.3rem 0;
+      font-size: 1rem;
+    }
+    .sec8 .contactForm{
+      width: 220px;
+      height: 100px;
+      margin-top: 650px;
+    }
+    .sec8 .forms{
+      width: 190px;
+      margin-top: 1.5rem;
+    }
+    .sec8 .forms .left{
+      width: 85px;
+      height: 50px;
+    }
+    .sec8 .forms .left input{
+      height: 12px;
+    }
+    .sec8 .forms .right textarea{
+      height: 40px;
+      padding-top: 0.5rem;
+    }
+    .sec8 .forms .left input, .sec8 .forms .right textarea {
+      width: 82px;
+      padding-left: 0.5rem;
+      font-size: 0.4rem;
+    }
+    .sec8 .contactForm button{
+      margin-right: 0.9rem;
+      margin-top: 2rem;
+      width: 30px;
+      height: 10px;
+      font-size: 3px;
+    }
+    footer{
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    footer .icons{
+      width: 90%;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+    }
+    footer p{
+      font-size: 0.6rem;
+    }
 }

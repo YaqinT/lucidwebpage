@@ -5,42 +5,30 @@
     <title></title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/media481.css">
-    <link rel="stylesheet" href="css/hamburgerMenu.css">
+    <link href="css/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
   </head>
   <body>
     <section class="sec1">
        <nav>
-         <div role="navigation" class="hambur-menu">
- <div id="menuToggle">
-   <!--
-   A fake / hidden checkbox is used as click reciever,
-   so you can use the :checked selector on it.
-   -->
-   <input type="checkbox" />
+          <div class="menu">
+            <button class="hamburger hamburger--emphatic" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
 
-   <!--
-   Some spans to act as a hamburger.
+            <div class="mobile-menu main-menu hidden-menu">
+              <ul>
+                <li class="active">Home</li>
+                <li>Features</li>
+                <li>About</li>
+                <li>Testimonials</li>
+                <li>Pricing</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
 
-   They are acting like a real hamburger,
-   not that McDonalds stuff.
-   -->
-   <span></span>
-   <span></span>
-   <span></span>
-
-   <!--
-   Too bad the menu has to be inside of the button
-   but hey, it's pure CSS magic.
-   -->
-   <ul id="menu">
-     <a href="#"><li>Home</li></a>
-     <a href="#"><li>About</li></a>
-     <a href="#"><li>Info</li></a>
-     <a href="#"><li>Contact</li></a>
-     <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-   </ul>
- </div>
-</div>
 
           <div class="logo">
             <div class="title">
@@ -51,7 +39,7 @@
               <p>THEME</p>
             </div>
           </div>
-          <ul>
+          <ul class="webUl">
             <li class="active">Home</li>
             <li>Features</li>
             <li>About</li>
@@ -67,8 +55,7 @@
            <div class="para">
              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-               laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-               in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               laboris nisi ut aliquip ex.
            </div>
            <div class="buttons">
              <button type="button" name="button" class="download">DOWNLOAD NOW</button>
@@ -363,5 +350,15 @@
         <p>COPYRIGHT © 2014 LUCID ONEPAGE THEME</p>
 
     </footer>
+    <script type="text/javascript">
+      let btn = document.getElementsByTagName("button")[0],
+          mMenu = document.getElementsByClassName("main-menu")[0];
+      btn.onclick = () => {
+        btn.classList.toggle('is-active');
+        mMenu.classList.toggle('display-menu');
+      }
+
+
+    </script>
   </body>
 </html>
